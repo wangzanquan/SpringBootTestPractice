@@ -1,24 +1,26 @@
-package com.selfpractic.controller;
+package com.selfpractic.model;
 
 
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
 
 @Getter
 @Setter
 @Entity
-@Table(name = "LibraryDemo")
+@Table(name = "Storage2")
 public class Library {
+
+    @Id
+    @Column(name = "id")
+    private String id;
 
     @Column(name = "boo_name")
     private String book_name;
-    @Column(name = "id")
-    private String id;
     @Column(name = "isbn")
     private String isbn;
     @Column(name = "aisle")

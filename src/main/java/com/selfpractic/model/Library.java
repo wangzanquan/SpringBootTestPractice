@@ -19,7 +19,7 @@ public class Library {
     @Column(name = "id")
     private String id;
 
-    @Column(name = "boo_name")
+    @Column(name = "book_name")
     private String book_name;
     @Column(name = "isbn")
     private String isbn;
